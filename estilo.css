@@ -1,0 +1,87 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(-45deg, #f97316, #ec4899, #8b5cf6, #f97316);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+input, textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #e14b5a;
+}
+
+.comment {
+  background: #f8f8f8;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.comentario-imagem {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  background: #ccc;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.header-content {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
